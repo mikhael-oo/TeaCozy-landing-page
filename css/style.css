@@ -9,12 +9,20 @@ html {
 }
 
 .header {
-    position: static;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     height: 69px;
     width: 100%;
+    background-color: black;
     border-bottom: 1px solid seashell;
+    margin-top: 0;
 }
 
+
+main {
+    margin-top: 69px;
+}
 .logo {
     float: left;
     text-align: center;
@@ -63,7 +71,7 @@ a {
 }
 
 .tea-month {
-    width: 85%;
+    width: 75%;
     height: auto;
     text-align: center;
     margin: 0 auto;
@@ -73,11 +81,57 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin: 0;
 }
 
 .tea-selection img {
-    width: 300px;
-    height: 200px;
+    max-width: 300px;
+    max-height: 200px;
+    height: auto;
     
+}
+
+.location {
+    text-align: center;
+    min-height: 600px;
+    width: auto;
+    background-image: url(../images/img-locations-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding-bottom: 10px;
+    
+}
+
+.location .title {
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.places {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 1;
+    margin: 1em 0;
+}
+
+.place {
+    background-color: black;
+    opacity: 1;
+    min-width: 300px;
+    height: 50%;
+}
+
+.ending {
+    text-align: center;
+    height: 200px;
+    width: auto;
+}
+
+footer {
+    float: left;
 }
